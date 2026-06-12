@@ -1,232 +1,140 @@
-<!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="El Llamado - Retiro de Reconexión en las Sierras de Córdoba. 3 días de conexión profunda, expansión de conciencia y sanación. 26-28 de Junio">
-    <meta property="og:title" content="El Llamado - Retiro de Reconexión">
-    <meta property="og:description" content="Un encuentro entre almas que recuerdan. Activaciones energéticas, meditaciones y reconexión con tu propósito.">
-    <meta property="og:type" content="website">
-    
-    <title>El Llamado - Retiro de Reconexión | Convocatoria Estelar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Montserrat', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    },
-                    colors: {
-                        bosque: '#2A3B2E',
-                        dorado: '#D4AF37',
-                        salvia: '#4F7962',
-                        crema: '#FDFBF7'
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .bg-fixed-nature {
-            background-image: url('https://images.unsplash.com/photo-1542224566-6e85f2e6772f?q=80&w=2000&auto=format&fit=crop');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-        
-        .glass-panel {
-            background: rgba(42, 59, 46, 0.85);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        .fade-in-up {
-            animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-            opacity: 0;
-            transform: translateY(30px);
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-            background: rgba(0,0,0,0.8); 
-        }
-        ::-webkit-scrollbar-thumb {
-            background: rgba(212, 175, 55, 0.5);
-            border-radius: 10px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgba(212, 175, 55, 0.8);
-        }
-    </style>
-</head>
-<body class="bg-fixed-nature text-crema font-sans antialiased overflow-x-hidden">
-
-    <nav class="fixed right-4 top-1/2 transform -translate-y-1/2 z-50 hidden md:flex flex-col gap-4">
-        <a href="#inicio" class="w-2.5 h-2.5 rounded-full bg-white opacity-40 hover:opacity-100 hover:scale-150 transition-all duration-300" aria-label="Ir a inicio"></a>
-        <a href="#mensaje" class="w-2.5 h-2.5 rounded-full bg-white opacity-40 hover:opacity-100 hover:scale-150 transition-all duration-300" aria-label="Ir a mensaje"></a>
-        <a href="#experiencia" class="w-2.5 h-2.5 rounded-full bg-white opacity-40 hover:opacity-100 hover:scale-150 transition-all duration-300" aria-label="Ir a experiencia"></a>
-        <a href="#hotel" class="w-2.5 h-2.5 rounded-full bg-white opacity-40 hover:opacity-100 hover:scale-150 transition-all duration-300" aria-label="Ir a hotel"></a>
-        <a href="#info" class="w-2.5 h-2.5 rounded-full bg-white opacity-40 hover:opacity-100 hover:scale-150 transition-all duration-300" aria-label="Ir a información"></a>
-        <a href="#cronograma" class="w-2.5 h-2.5 rounded-full bg-white opacity-40 hover:opacity-100 hover:scale-150 transition-all duration-300" aria-label="Ir a cronograma"></a>
-        <a href="#reserva" class="w-2.5 h-2.5 rounded-full bg-white opacity-40 hover:opacity-100 hover:scale-150 transition-all duration-300" aria-label="Ir a reserva"></a>
-    </nav>
-
-    <section id="inicio" class="relative min-h-[100svh] flex flex-col items-center justify-center text-center px-6 py-12">
-        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-bosque/80 z-0"></div>
-        
-        <div class="relative z-10 fade-in-up space-y-8 max-w-4xl w-full">
-            <p class="text-xs md:text-sm tracking-[0.4em] font-light uppercase text-dorado/90">Sierras de Córdoba</p>
-            
-            <div class="space-y-4">
-                <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl font-normal leading-tight text-white drop-shadow-2xl">
-                    El Llamado
-                </h1>
-                <h2 class="font-serif italic text-2xl md:text-4xl lg:text-5xl text-gray-200 drop-shadow-md">
-                    Retiro de Reconexión
-                </h2>
-            </div>
-            
-            <div class="w-16 h-[1px] bg-dorado mx-auto my-8 opacity-50"></div>
-            
-            <div class="flex flex-col sm:flex-row gap-5 justify-center mt-12 w-full max-w-md mx-auto">
-                <a href="#reserva" class="w-full sm:w-auto px-8 py-4 bg-salvia/90 hover:bg-salvia text-white rounded-full transition-all duration-300 tracking-[0.2em] text-xs md:text-sm font-semibold text-center">
-                    RESERVAR AHORA
-                </a>
-                <a href="#mensaje" class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/50 text-white hover:bg-white/10 rounded-full transition-all duration-300 tracking-[0.2em] text-xs md:text-sm font-semibold text-center">
-                    DESCUBRIR MÁS
-                </a>
-            </div>
-        </div>
-        
-        <a href="#mensaje" class="absolute bottom-8 z-10 animate-bounce text-white/70 hover:text-white transition-colors p-4">
-            <i class="fa-solid fa-chevron-down text-2xl" aria-hidden="true"></i>
-        </a>
-    </section>
-
-    <section id="mensaje" class="min-h-[100svh] flex items-center justify-center px-4 py-24 relative">
-        <div class="absolute inset-0 bg-bosque/90 z-0"></div>
-        <div class="relative z-10 max-w-3xl mx-auto text-center glass-panel p-8 md:p-16 rounded-[2rem] shadow-2xl">
-            
-            <h2 class="font-serif text-3xl md:text-5xl mb-8 text-dorado leading-tight">No todos sentirán<br>este mensaje.</h2>
-            
-            <div class="space-y-8 text-base md:text-xl font-light leading-relaxed text-gray-100">
-                <p>Pero si algo dentro de vos se activó al leer estas palabras, seguí leyendo...</p>
-                <p>Hay almas que llegaron a este tiempo para despertar.</p>
-                
-                <div class="py-6">
-                    <p class="font-medium text-white text-xl md:text-2xl italic">✨ El Llamado es mucho más que un retiro.</p>
-                    <p class="mt-4">Es un encuentro entre almas que recuerdan.</p>
-                </div>
-            </div>
-            
-            <div class="mt-10 pt-10 border-t border-dorado/20">
-                <p class="font-serif italic text-2xl md:text-3xl text-dorado/90">"No venís a convertirte en alguien nuevo.<br>Venís a recordar quién sos."</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experiencia" class="min-h-[100svh] flex items-center justify-center px-4 py-24 relative">
-        <div class="absolute inset-0 bg-black/80 z-0"></div>
-        <div class="relative z-10 max-w-6xl mx-auto w-full">
-            <div class="text-center mb-16 md:mb-20 px-4">
-                <p class="text-dorado tracking-[0.3em] text-xs font-bold uppercase mb-4">Lo que viviremos</p>
-                <h2 class="font-serif text-4xl md:text-6xl mb-6 text-white">La Experiencia</h2>
-                <p class="text-base md:text-lg text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">
-                    Tres días de conexión profunda, expansión de conciencia, sanación y reencuentro con tu verdadera esencia.
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 px-2">
-                <div class="glass-panel p-8 rounded-3xl hover:-translate-y-2 transition-all duration-500 group">
-                    <div class="text-3xl md:text-4xl mb-6 opacity-80 group-hover:opacity-100 transition-opacity" aria-hidden="true">🌿</div>
-                    <h3 class="font-serif text-xl md:text-2xl mb-3 text-dorado">Activaciones Energéticas</h3>
-                </div>
-                
-                <div class="glass-panel p-8 rounded-3xl hover:-translate-y-2 transition-all duration-500 group">
-                    <div class="text-3xl md:text-4xl mb-6 opacity-80 group-hover:opacity-100 transition-opacity" aria-hidden="true">🔥</div>
-                    <h3 class="font-serif text-xl md:text-2xl mb-3 text-dorado">Liberación Emocional</h3>
-                </div>
-                
-                <div class="glass-panel p-8 rounded-3xl hover:-translate-y-2 transition-all duration-500 group">
-                    <div class="text-3xl md:text-4xl mb-6 opacity-80 group-hover:opacity-100 transition-opacity" aria-hidden="true">🌀</div>
-                    <h3 class="font-serif text-xl md:text-2xl mb-3 text-dorado">Meditaciones Profundas</h3>
-                </div>
-                
-                <div class="glass-panel p-8 rounded-3xl hover:-translate-y-2 transition-all duration-500 group">
-                    <div class="text-3xl md:text-4xl mb-6 opacity-80 group-hover:opacity-100 transition-opacity" aria-hidden="true">💫</div>
-                    <h3 class="font-serif text-xl md:text-2xl mb-3 text-dorado">Reconexión con tu Propósito</h3>
-                </div>
-                
-                <div class="glass-panel p-8 rounded-3xl hover:-translate-y-2 transition-all duration-500 group">
-                    <div class="text-3xl md:text-4xl mb-6 opacity-80 group-hover:opacity-100 transition-opacity" aria-hidden="true">🌌</div>
-                    <h3 class="font-serif text-xl md:text-2xl mb-3 text-dorado">Expansión de Conciencia</h3>
-                </div>
-                
-                <div class="glass-panel p-8 rounded-3xl hover:-translate-y-2 transition-all duration-500 group">
-                    <div class="text-3xl md:text-4xl mb-6 opacity-80 group-hover:opacity-100 transition-opacity" aria-hidden="true">🤍</div>
-                    <h3 class="font-serif text-xl md:text-2xl mb-3 text-dorado">Comunidad Consciente</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="hotel" class="min-h-[100svh] flex items-center justify-center px-4 py-24 relative">
+<section id="hotel" class="min-h-[100svh] flex items-center justify-center px-4 py-24 relative">
         <div class="absolute inset-0 bg-bosque/95 z-0"></div>
         
         <div class="relative z-10 max-w-6xl mx-auto w-full">
             
             <div class="text-center mb-12">
-                <p class="text-dorado tracking-[0.3em] text-xs font-bold uppercase mb-4">Nuestro Refugio</p>
-                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white">El Gran Hotel del Tabaco</h2>
+                <p class="text-dorado tracking-[0.3em] text-xs font-bold uppercase mb-4">Nuestro Refugio Místico</p>
+                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white">Cabañas Namaste</h2>
+                <p class="text-dorado/80 tracking-wide text-sm mt-2 font-light italic">al pie del ⛰Cerro Uritorco, Capilla del Monte CBA</p>
             </div>
             
-            <div class="glass-panel p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-dorado/30 flex flex-col lg:flex-row gap-10 items-center">
+            <div class="glass-panel p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-dorado/30 flex flex-col lg:flex-row gap-10 items-center mb-10">
                 
                 <div class="flex-1 text-center lg:text-left">
-                    <i class="fa-solid fa-leaf text-4xl text-dorado mb-8 opacity-80" aria-hidden="true"></i>
+                    <i class="fa-solid fa-mountain-sun text-4xl text-dorado mb-8 opacity-80" aria-hidden="true"></i>
                     
                     <p class="text-lg md:text-xl text-gray-200 font-light leading-relaxed mb-6">
-                        Un espacio histórico inmerso en la serenidad de las sierras, cuidadosamente elegido para ser nuestro contenedor durante estos días de transformación.
+                        Un entorno energético y sagrado al pie del majestuoso Cerro Uritorco, seleccionado con consciencia para albergar nuestra vibración durante este viaje de despertar.
                     </p>
                     
                     <div class="w-24 h-[1px] bg-dorado/50 mx-auto lg:mx-0 my-8"></div>
                     
                     <p class="text-sm md:text-base text-gray-300 font-light leading-relaxed">
-                        Un lugar que invita a la pausa, donde la naturaleza abraza cada rincón. Habitaciones cálidas y espacios diseñados para el descanso profundo de tu cuerpo y tu mente, con acceso a piscina y zonas de meditación.
+                        Nuestras cabañas te invitan a fundirte con el silencio de la naturaleza serrana. Un espacio dotado de instalaciones armónicas pensadas para el confort del cuerpo y la expansión del espíritu, ideal para la introspección profunda.
                     </p>
                     
                     <div class="mt-10 flex justify-center lg:justify-start gap-5 text-dorado/70">
-                        <i class="fa-solid fa-bed text-2xl" aria-hidden="true"></i>
-                        <i class="fa-solid fa-mug-hot text-2xl" aria-hidden="true"></i>
-                        <i class="fa-solid fa-tree text-2xl" aria-hidden="true"></i>
+                        <i class="fa-solid fa-house-chimney text-2xl" aria-hidden="true"></i>
+                        <i class="fa-solid fa-dharmachakra text-2xl" aria-hidden="true"></i>
+                        <i class="fa-solid fa-spa text-2xl" aria-hidden="true"></i>
                     </div>
                 </div>
 
                 <div class="flex-1 w-full space-y-4">
                     <div class="w-full h-64 overflow-hidden rounded-3xl shadow-xl border border-white/10 relative group">
                         <div class="absolute inset-0 bg-dorado/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay"></div>
-                        <img src="fachada-hotel.png.jpeg" alt="Vista aérea del Gran Hotel del Tabaco en las Sierras de Córdoba" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                        <img src="cabanas-namaste-fachada.jpg" alt="Vista exterior de Cabañas Namaste con el Cerro Uritorco de fondo" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
                     </div>
                     <div class="w-full h-64 overflow-hidden rounded-3xl shadow-xl border border-white/10 relative group">
                         <div class="absolute inset-0 bg-dorado/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay"></div>
-                        <img src="fondo-hotel.jpg.jpeg" alt="Piscina y espacios del Gran Hotel del Tabaco" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                        <img src="cabanas-namaste-entorno.jpg" alt="Instalaciones naturales y predio en Capilla del Monte" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="glass-panel p-6 rounded-3xl border border-dorado/20 flex flex-col">
+                    <h3 class="font-serif text-xl text-dorado mb-4 flex items-center gap-3 border-b border-dorado/20 pb-3">
+                        <i class="fa-solid fa-circle-check opacity-90" aria-hidden="true"></i> Incluye
+                    </h3>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-shapes text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Octógono para actividades</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-shield-halved text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Predio cerrado</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-wifi text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Wi-Fi</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-car text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Cochera cubierta</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-fire-flame-simple text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Calefacción</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-bed text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Ropa blanca</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-kitchen-set text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Cocina equipada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-3xl border border-dorado/20 flex flex-col">
+                    <h3 class="font-serif text-xl text-dorado mb-4 flex items-center gap-3 border-b border-dorado/20 pb-3">
+                        <i class="fa-solid fa-mug-hot opacity-90" aria-hidden="true"></i> Desayuno Incluido
+                    </h3>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-coffee text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Café y Té</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-leaf text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Yerba Mate</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-cubes text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Azúcar</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-glass-water text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Leche</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-bread-slice text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Medialunas y Tostadas</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-jar text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Manteca y dulces</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-6 rounded-3xl border border-dorado/20 flex flex-col">
+                    <h3 class="font-serif text-xl text-dorado mb-4 flex items-center gap-3 border-b border-dorado/20 pb-3">
+                        <i class="fa-solid fa-hand-holding-heart opacity-90" aria-hidden="true"></i> Servicios Incluidos
+                    </h3>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-lightbulb text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Luz</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-fire text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Gas</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-droplet text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Agua</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-300 group">
+                            <i class="fa-solid fa-sparkles text-dorado/90 w-5 text-center group-hover:scale-110 transition-transform" aria-hidden="true"></i>
+                            <span class="text-sm font-light text-gray-200">Limpieza inicial</span>
+                        </div>
                     </div>
                 </div>
                 
@@ -234,237 +142,3 @@
             
         </div>
     </section>
-
-    <section id="info" class="min-h-[100svh] flex items-center justify-center px-4 py-24 relative">
-        <div class="absolute inset-0 bg-bosque/95 z-0"></div>
-        <div class="relative z-10 w-full max-w-5xl">
-            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 glass-panel p-8 md:p-16 rounded-[2.5rem]">
-                
-                <div class="flex-1 space-y-10">
-                    <h2 class="font-serif text-3xl md:text-4xl text-dorado mb-8 border-b border-dorado/20 pb-6">La Coordenada</h2>
-                    
-                    <div class="flex items-start gap-5">
-                        <div class="bg-white/5 p-4 rounded-full">
-                            <i class="fa-solid fa-location-dot text-2xl text-white" aria-hidden="true"></i>
-                        </div>
-                        <div class="pt-2">
-                            <h3 class="font-bold text-xs tracking-[0.2em] text-gray-400 mb-2">LUGAR</h3>
-                            <p class="font-light text-xl text-white">Huerta Grande</p>
-                            <p class="font-light text-sm text-gray-300">Sierras de Córdoba</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start gap-5">
-                        <div class="bg-white/5 p-4 rounded-full">
-                            <i class="fa-regular fa-calendar text-2xl text-white" aria-hidden="true"></i>
-                        </div>
-                        <div class="pt-2">
-                            <h3 class="font-bold text-xs tracking-[0.2em] text-gray-400 mb-2">FECHA</h3>
-                            <p class="font-light text-xl text-white">26, 27 y 28 de Junio</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex-1 space-y-10 lg:border-l lg:border-white/10 lg:pl-12 pt-10 lg:pt-0 border-t border-white/10 lg:border-t-0">
-                    <h2 class="font-serif text-3xl md:text-4xl text-dorado mb-8 border-b border-dorado/20 pb-6">Los Guías</h2>
-                    
-                    <div>
-                        <h3 class="font-bold text-xs tracking-[0.2em] text-gray-400 mb-6">FACILITAN</h3>
-                        <div class="space-y-4">
-                            <a href="https://instagram.com/diatomeas" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white/5 hover:bg-white/10 p-4 rounded-2xl transition-all duration-300">
-                                <i class="fa-brands fa-instagram text-2xl text-dorado" aria-hidden="true"></i>
-                                <span class="font-light text-lg tracking-wide">@diatomeas</span>
-                            </a>
-                            <a href="https://instagram.com/lereikimaster" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white/5 hover:bg-white/10 p-4 rounded-2xl transition-all duration-300">
-                                <i class="fa-brands fa-instagram text-2xl text-dorado" aria-hidden="true"></i>
-                                <span class="font-light text-lg tracking-wide">@lereikimaster</span>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="pt-4">
-                        <h3 class="font-bold text-xs tracking-[0.2em] text-gray-400 mb-6">PRODUCCIÓN</h3>
-                        <a href="https://instagram.com/cosmica.planners" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 bg-white/5 hover:bg-white/10 p-4 rounded-2xl transition-all duration-300">
-                            <i class="fa-brands fa-instagram text-2xl text-dorado" aria-hidden="true"></i>
-                            <span class="font-light text-lg tracking-wide">@cosmica.planners</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- NUEVA SECCIÓN CRONOGRAMA POR DÍA -->
-    <section id="cronograma" class="min-h-[100svh] flex items-center justify-center px-4 py-24 relative">
-        <div class="absolute inset-0 bg-black/80 z-0"></div>
-        <div class="relative z-10 max-w-4xl mx-auto w-full">
-            <div class="text-center mb-16 px-4">
-                <p class="text-dorado tracking-[0.3em] text-xs font-bold uppercase mb-4">El Camino</p>
-                <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-white">Cronograma de Actividades</h2>
-            </div>
-            
-            <div class="space-y-8">
-                <!-- Viernes -->
-                <div class="glass-panel p-8 md:p-10 rounded-3xl border-l-4 border-dorado/60 hover:border-dorado transition-colors duration-300">
-                    <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-                        <div class="md:w-1/3 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10 pb-4 md:pb-0">
-                            <h3 class="font-serif text-3xl md:text-4xl text-white mb-2">Viernes 26</h3>
-                            <p class="text-dorado tracking-[0.2em] text-sm uppercase font-bold">Día 1</p>
-                        </div>
-                        <div class="md:w-2/3">
-                            <ul class="space-y-5 text-gray-200 font-light text-lg">
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-moon text-dorado/60 text-sm"></i>
-                                    <span>Charla Introductoria</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-dna text-dorado/60 text-sm"></i>
-                                    <span>Recalibracion ADN</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sábado -->
-                <div class="glass-panel p-8 md:p-10 rounded-3xl border-l-4 border-dorado/60 hover:border-dorado transition-colors duration-300">
-                    <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-                        <div class="md:w-1/3 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10 pb-4 md:pb-0">
-                            <h3 class="font-serif text-3xl md:text-4xl text-white mb-2">Sábado 27</h3>
-                            <p class="text-dorado tracking-[0.2em] text-sm uppercase font-bold">Día 2</p>
-                        </div>
-                        <div class="md:w-2/3">
-                            <ul class="space-y-5 text-gray-200 font-light text-lg">
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-leaf text-dorado/60 text-sm"></i>
-                                    <span>Yoga</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-hands-holding text-dorado/60 text-sm"></i>
-                                    <span>Juegos de Conexión</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-star text-dorado/90 text-sm"></i>
-                                    <span class="font-medium text-white">Conferencia Semilla Estelares</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-mountain text-dorado/60 text-sm"></i>
-                                    <span>Salida Cuchi Corral</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-sparkles text-dorado/60 text-sm"></i>
-                                    <span>Charlas Estelares</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Domingo -->
-                <div class="glass-panel p-8 md:p-10 rounded-3xl border-l-4 border-dorado/60 hover:border-dorado transition-colors duration-300">
-                    <div class="flex flex-col md:flex-row gap-6 md:gap-12">
-                        <div class="md:w-1/3 flex flex-col justify-center border-b md:border-b-0 md:border-r border-white/10 pb-4 md:pb-0">
-                            <h3 class="font-serif text-3xl md:text-4xl text-white mb-2">Domingo 28</h3>
-                            <p class="text-dorado tracking-[0.2em] text-sm uppercase font-bold">Día 3</p>
-                        </div>
-                        <div class="md:w-2/3">
-                            <ul class="space-y-5 text-gray-200 font-light text-lg">
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-leaf text-dorado/60 text-sm"></i>
-                                    <span>Yoga</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-place-of-worship text-dorado/60 text-sm"></i>
-                                    <span>Charla: Capilla Mística</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-users text-dorado/60 text-sm"></i>
-                                    <span>Recalibracion Grupal</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-water text-dorado/60 text-sm"></i>
-                                    <span>Sound Bath</span>
-                                </li>
-                                <li class="flex items-center gap-4">
-                                    <i class="fa-solid fa-heart text-dorado/60 text-sm"></i>
-                                    <span>Cierre</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="reserva" class="min-h-[100svh] flex items-center justify-center px-4 py-24 relative text-center">
-        <div class="absolute inset-0 bg-gradient-to-t from-black via-bosque/95 to-black/90 z-0"></div>
-        
-        <div class="relative z-10 max-w-2xl mx-auto w-full">
-            <div class="inline-block bg-red-900/30 text-red-200 px-6 py-2 rounded-full text-xs font-bold tracking-[0.2em] mb-10 border border-red-500/20 shadow-lg">
-                <i class="fa-solid fa-triangle-exclamation mr-2" aria-hidden="true"></i> CUPOS MUY LIMITADOS
-            </div>
-            
-            <h2 class="font-serif text-5xl md:text-6xl text-white mb-6">Asegurá tu lugar</h2>
-            <p class="text-gray-300 font-light text-lg mb-12">El llamado está hecho. La decisión es tuya.</p>
-            
-            <div class="glass-panel rounded-[2rem] p-8 md:p-12 mb-12 relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-dorado to-transparent opacity-50"></div>
-                
-                <p class="text-xs font-bold tracking-[0.3em] text-dorado mb-4">VALOR EARLY BIRD</p>
-                <div class="flex items-center justify-center gap-2 mb-4">
-                    <span class="text-2xl text-gray-400">$</span>
-                    <span class="text-5xl md:text-6xl font-serif text-white">240.000</span>
-                    <span class="text-xl text-gray-400">ARS</span>
-                </div>
-                
-                <div class="inline-flex items-center justify-center gap-2 bg-white/5 px-4 py-2 rounded-full mt-4">
-                    <i class="fa-regular fa-clock text-dorado text-sm" aria-hidden="true"></i>
-                    <p class="text-xs text-gray-300 tracking-wide">Disponible hasta el 16 de junio</p>
-                </div>
-            </div>
-            
-            <p class="text-sm text-gray-400 mb-8 max-w-md mx-auto leading-relaxed">
-                Solicitá toda la información, formas de pago y cronograma detallado enviándonos un mensaje.
-            </p>
-            
-            <a href="https://wa.me/5492944200047?text=Hola,%20siento%20El%20Llamado.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20para%20reservar%20mi%20lugar." target="_blank" rel="noopener noreferrer"
-               class="group relative inline-flex items-center justify-center gap-4 w-full sm:w-auto px-10 py-5 bg-[#25D366] hover:bg-[#1EBE53] text-white rounded-full transition-all duration-300 font-bold shadow-lg hover:shadow-xl">
-                <i class="fa-brands fa-whatsapp text-2xl relative z-10" aria-hidden="true"></i>
-                <span class="tracking-[0.1em] text-sm md:text-base font-bold relative z-10">CONTACTAR POR WHATSAPP</span>
-            </a>
-            
-        </div>
-    </section>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Event",
-      "name": "El Llamado - Retiro de Reconexión",
-      "description": "Retiro de 3 días de conexión profunda, expansión de conciencia y sanación en las Sierras de Córdoba",
-      "startDate": "2026-06-26",
-      "endDate": "2026-06-28",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "location": {
-        "@type": "Place",
-        "name": "El Gran Hotel del Tabaco",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Huerta Grande",
-          "addressRegion": "Córdoba",
-          "addressCountry": "AR"
-        }
-      },
-      "organizer": {
-        "@type": "Organization",
-        "name": "Cósmica Planners",
-        "url": "https://instagram.com/cosmica.planners"
-      }
-    }
-    </script>
-
-</body>
-</html>
